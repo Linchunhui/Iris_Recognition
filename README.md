@@ -21,12 +21,13 @@ We use hough transform and canny edge detection to segment the iris,and then unf
 ### USIT v2.2
 We also recommend an open-source software,USIT v2.2,from the University of Salzburg to complete the preprocessing.
 [Github](https://github.com/ngoclamvt123/usit-v2.2.0)
-You just need to clone the git and install opencv and boost,and then release wahet.cpp.
-usage:
-for a single image 
+You just need to clone the git and install opencv and boost,and then release wahet.cpp. 
+
+usage:  
+for a single image  
 test.exe -i D:\study\iris\CASIA-Iris-Thousand\000\L\S5000L00.jpg -o texture.png -s 256 64 -e
 
-for a batch images 
+for a batch images  
 test.exe -i D:\study\iris\CASIA\origin\train\*.jpg  -o D:/study/iris/CASIA/enhance_512/train/?1.jpg  -s 512 64 -e
 
 If you don't need enhancement,you just need delete "-e". 
