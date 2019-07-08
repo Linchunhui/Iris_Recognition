@@ -30,7 +30,7 @@ test.exe -i D:\study\iris\CASIA-Iris-Thousand\000\L\S5000L00.jpg -o texture.png 
 for a batch images  
 test.exe -i D:\study\iris\CASIA\origin\train\*.jpg  -o D:/study/iris/CASIA/enhance_512/train/?1.jpg  -s 512 64 -e
 
-If you don't need enhancement,you just need delete "-e". 
+If you don't need enhancement,you just need delete "-e".  
 If you need the segmentation,you just need add "-sr D:/study/iris/CASIA/seg/train/?1.jpg"
  
 ### Gabor Feature Extraction
