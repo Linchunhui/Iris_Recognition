@@ -41,10 +41,10 @@ We use cityblock distance,euclidean distance and cosine distance to match,and re
 ### Machine Learning Predict
 We use pca to reduce the dimension and then use KNN and SVM to train and predict.When the dimension reduce to 380, the result is the best,90.2% for KNN and 90.7 for SVM.
 
-## CNN Feature Extraction
+## 2.CNN Feature Extraction
 We use InceptionV4,ResNet-101,Densenet121 to extract feature from the ROI after enhancement.When inceptionV4 at "Mixed6a",ResNet with block[3,4,9] and DenseNet with block[6,12,3] and then use pca reduce the dimension to 580 for SVM to get the best results 95.8%,96.4% and 97.1%.We also append avgrage pooling after convolution to avoid MemoryError.
 
-## CNN Classification
+## 3.CNN Classification
 We also use a mini densenet with 40 layers to train a model.Dataset are the ROI of the CASIA-Iris-Thousand.However,it doesn't work for the limitation of the dataset and lead to over-fit.
 
 
