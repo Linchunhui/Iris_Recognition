@@ -4,13 +4,13 @@ Iris recognition include tradition algorithm and deep learning.
 # Code
 code dir 
 * script
- * GetList.py
- * GetPic.py
- * GetVector.py
- * copy_pic.py
+  * GetList.py
+  * GetPic.py
+  * GetVector.py
+  * copy_pic.py
 * tradition
- * Segmentation.py
->>Normalization.py
+  * Segmentation.py
+  * Normalization.py
 >>Enhancement.py
 >>Gabor.py
 >>Matching.py
