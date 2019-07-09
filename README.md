@@ -16,7 +16,7 @@ code dir
   * Matching.py  Match with cityblock、euclidean and cosine distance.
   * Evaluation.py  Evaluate the accuracy rate with each distance.
   * iris_demo2.py  Run and get the results.
- * CNN_feature
+* CNN_feature
   * inception_utils.py Inception utils from geogle tensorflow slim.
   * inceptionv4.py  Inceptionv4 from geogle tensorflow slim.
   * resnet_utils.py Resnet_utils from geogle tensorflow slim.
