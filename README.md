@@ -65,7 +65,7 @@ We use gabor filter to complete the feature extraction.
 We use cityblock distance,euclidean distance and cosine distance to match,and results respectively are 88.19%,84.95% and 85.42%.
 
 ### Machine Learning Predict
-We use pca to reduce the dimension and then use KNN and SVM to train and predict.When the dimension reduce to 380, the result is the best,90.2% for KNN and 90.7 for SVM.
+We use pca to reduce the dimension and then use KNN and SVM to train and predict.When the dimension reduce to 380, the result is the best,90.2% for KNN and 90.7% for SVM.
 
 ## 2.CNN Feature Extraction
 We use InceptionV4,ResNet-101,Densenet121 to extract feature from the ROI after enhancement.When inceptionV4 at "Mixed6a",ResNet with block[3,4,9] and DenseNet with block[6,12,3] and then use pca reduce the dimension to 580 for SVM to get the best results 95.8%,96.4% and 97.1%.We also append avgrage pooling after convolution to avoid MemoryError.
