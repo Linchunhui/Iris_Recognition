@@ -2,7 +2,33 @@
 Iris recognition include tradition algorithm and deep learning.
 
 # Code
-
+code dir 
+>script
+>>GetList.py
+>>GetPic.py
+>>GetVector.py
+>>copy_pic.py
+>tradition
+>>Segmentation.py
+>>Normalization.py
+>>Enhancement.py
+>>Gabor.py
+>>Matching.py
+>>Evaluation.py
+>>iris_demo2.py
+>CNN_feature
+>>inception_utils.py
+>>inceptionv4.py
+>>resnet_utils.py
+>>ResNet.py
+>>DenseNet.py
+>>cnn_feature.py
+>>iris_demo1.py
+>CNN_classifier
+>>utils.py
+>>DenseNet.py
+>>train.py
+>>eval.py
 # Dataset
 ## CASIA-Iris version1.0
 Include 108 classes, each class has 7 images, three of them for train and the other for test.
