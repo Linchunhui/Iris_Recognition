@@ -4,31 +4,32 @@ Iris recognition include tradition algorithm and deep learning.
 # Code
 code dir 
 * script
-  * GetList.py
-  * GetPic.py
-  * GetVector.py
-  * copy_pic.py
+  * GetList.py  Get the image path list and label list,then split to train set and test set.
+  * GetPic.py   Get and save the iris pictures after segmentation and ROI pictures after normalization and enhancement.
+  * GetVector.py  Get the feature vector list of train and test according gabor filter and save as csv.
+  * copy_pic.py   Copy all the picture into one dir.
 * tradition
-  * Segmentation.py
-  * Normalization.py
->>Enhancement.py
->>Gabor.py
->>Matching.py
->>Evaluation.py
->>iris_demo2.py
->CNN_feature
->>inception_utils.py
->>inceptionv4.py
->>resnet_utils.py
->>ResNet.py
->>DenseNet.py
->>cnn_feature.py
->>iris_demo1.py
->CNN_classifier
->>utils.py
->>DenseNet.py
->>train.py
->>eval.py
+  * Segmentation.py Segment the iris ring with hough transform and canny edge detection.
+  * Normalization.py Flat the circular ring into rectangle ROI.
+  * Enhancement.py  Enhancement the ROI after normalization.
+  * Gabor.py  Feature extraction with gabor filter.
+  * Matching.py  Match with cityblock、euclidean and cosine distance.
+  * Evaluation.py  Evaluate the accuracy rate with each distance.
+  * iris_demo2.py  Run and get the results.
+ * CNN_feature
+  * inception_utils.py Inception utils from geogle tensorflow slim.
+  * inceptionv4.py  Inceptionv4 from geogle tensorflow slim.
+  * resnet_utils.py Resnet_utils from geogle tensorflow slim.
+  * ResNet.py  Resnet from geogle tensorflow slim.
+  * DenseNet.py  DenseNet from geogle tensorflow slim.
+  * cnn_feature.py  CNN feature extraction with inceptionv4、resnet and densenet.
+  * iris_demo1.py  Run and get the results.
+* CNN_classifier
+  * utils.py  Preprocess.
+  * DenseNet.py Densenet.
+  * train.py  Train with a mini-densenet.
+  * eval.py  Eval and get the results.
+  
 # Dataset
 ## CASIA-Iris version1.0
 Include 108 classes, each class has 7 images, three of them for train and the other for test.
@@ -42,10 +43,6 @@ We random select 70% of them for train, and 30% for test.All the results are bas
 ### Preprocessing
 We use hough transform and canny edge detection to segment the iris,and then unfold the ring between the outer circle and inner circle into a rectangle of size 64*512. After normalization,we did local image equalization as Li Ma's paper.Finally,we use gabor filter to extract the feature vector from the ROI.
  
-#### Segmentation.py
-#### Normalization.py
-#### Enhancement.py
-
 ### USIT v2.2
 We also recommend an open-source software,USIT v2.2,from the University of Salzburg to complete the preprocessing.
 [Github](https://github.com/ngoclamvt123/usit-v2.2.0)
