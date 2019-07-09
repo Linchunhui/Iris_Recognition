@@ -39,7 +39,7 @@ Include 1000 classes, each class has 20 images,half are left eyes and half right
 We random select 70% of them for train, and 30% for test.All the results are based on this dataset.
 
 # Algorithm
-## 1.tradition algorithm
+## 1.Tradition Algorithm
 ### Preprocessing
 We use hough transform and canny edge detection to segment the iris,and then unfold the ring between the outer circle and inner circle into a rectangle of size 64*512. After normalization,we did local image equalization as Li Ma's paper.Finally,we use gabor filter to extract the feature vector from the ROI.
  
