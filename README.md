@@ -1,13 +1,37 @@
 # Iris_Recognition
 Iris recognition include tradition algorithm and deep learning.
 
+<!-- TOC -->
+
+- [Code](#Code)  
+    - [script](##script)  
+    - [tradition](##tradition)  
+    - [CNN_feature](##CNN_feature)  
+    - [CNN classifier](##CNN classifier)    
+- [Dataset](#Dataset)  
+    - [CASIA-Iris Version 1.0](##CASIA-Iris\Version\1.0)  
+    - [CASIA-Iris-Thousand](##CASIA-Iris-Thousand)   
+- [Algorithm](#Algorithm)  
+    - [1.Tradition Algorithm](##1.Tradition\Algorithm)  
+      - [Preprocessing](###Preprocessing)  
+      - [USIT v2.2](###USIT\v2.2)
+      - [Gabor Feature Extraction](###Gabor\Feature\Extraction)
+      - [Distance Based Match](###Distance\Based\Match)
+      - [Machine Learning Predict](###Machine\Learning\Predict)
+    - [2.CNN Feature Extraction](##2.CNN\Feature\Extraction)
+    - [3.CNN Classification](##3.CNN\Classification)
+    
+<!-- /TOC -->  
+
 # Code
 code dir 
+## script
 * script
   * GetList.py  Get the image path list and label list,then split to train set and test set.
   * GetPic.py   Get and save the iris pictures after segmentation and ROI pictures after normalization and enhancement.
   * GetVector.py  Get the feature vector list of train and test according gabor filter and save as csv.
   * copy_pic.py   Copy all the picture into one dir.
+## tradition  
 * tradition
   * Segmentation.py Segment the iris ring with hough transform and canny edge detection.
   * Normalization.py Flat the circular ring into rectangle ROI.
@@ -16,6 +40,7 @@ code dir
   * Matching.py  Match with cityblock、euclidean and cosine distance.
   * Evaluation.py  Evaluate the accuracy rate with each distance.
   * iris_demo2.py  Run and get the results.
+## CNN_feature
 * CNN_feature
   * inception_utils.py Inception utils from geogle tensorflow slim.
   * inceptionv4.py  Inceptionv4 from geogle tensorflow slim.
@@ -24,6 +49,7 @@ code dir
   * DenseNet.py  DenseNet from geogle tensorflow slim.
   * cnn_feature.py  CNN feature extraction with inceptionv4、resnet and densenet.
   * iris_demo1.py  Run and get the results.
+## CNN classifier
 * CNN_classifier
   * utils.py  Preprocess.
   * DenseNet.py Densenet.
