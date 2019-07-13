@@ -67,20 +67,22 @@ We random select 70% of them for train, and 30% for test.All the results are bas
 # Algorithm
 ## 1.Tradition Algorithm
 ### Preprocessing
-We use hough transform and canny edge detection to segment the iris,and then unfold the ring between the outer circle and inner circle into a rectangle of size 64*512. After normalization,we did local image equalization as Li Ma's paper.Finally,we use gabor filter to extract the feature vector from the ROI.
+We use `hough transform` and `canny edge detection` to segment the iris,and then unfold the ring between the outer circle and inner circle into a rectangle of size 64*512. After `normalization`,we did local image equalization as Li Ma's paper.Finally,we use gabor filter to extract the feature vector from the ROI.
  
 ### USIT v2.2
-We also recommend an open-source software,USIT v2.2,from the University of Salzburg to complete the preprocessing.
+We also recommend an open-source software,`USIT v2.2`,from the University of Salzburg to complete the preprocessing.
 [Github](https://github.com/ngoclamvt123/usit-v2.2.0)
-You just need to clone the git and install opencv and boost,and then release wahet.cpp. 
+You just need to clone the git and install opencv and boost,and then release `wahet.cpp`. 
 
 usage:  
-for a single image  
+for a single image
+```
 test.exe -i D:\study\iris\CASIA-Iris-Thousand\000\L\S5000L00.jpg -o texture.png -s 256 64 -e
-
-for a batch images  
+```
+for a batch images
+```
 test.exe -i D:\study\iris\CASIA\origin\train\*.jpg  -o D:/study/iris/CASIA/enhance_512/train/?1.jpg  -s 512 64 -e
-
+```
 If you don't need enhancement,you just need delete "-e".  
 If you need the segmentation,you just need add "-sr D:/study/iris/CASIA/seg/train/?1.jpg"
  
