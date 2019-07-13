@@ -7,7 +7,7 @@ Iris recognition include tradition algorithm and deep learning.
     - [script](##script)  
     - [tradition](##tradition)  
     - [CNN_feature](##CNN_feature)  
-    - [CNN classifier](##CNN classifier)    
+    - [CNN classifier](##CNN\classifier)    
 - [Dataset](#Dataset)  
     - [CASIA-Iris Version 1.0](##CASIA-Iris\Version\1.0)  
     - [CASIA-Iris-Thousand](##CASIA-Iris-Thousand)   
